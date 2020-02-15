@@ -1,7 +1,7 @@
 package leetcode
 
 import (
-	"github.com/blurpesec/lc-practice/questions/utils"
+	"github.com/blurpesec/lc-practice/utils"
 )
 // Thought process:
 /*

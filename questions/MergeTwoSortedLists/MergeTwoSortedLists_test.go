@@ -3,7 +3,7 @@ package leetcode
 import (
 	"fmt"
 	"testing"
-	"github.com/blurpesec/lc-practice/questions/utils"
+	"github.com/blurpesec/lc-practice/utils"
 )
 
 type question struct {
