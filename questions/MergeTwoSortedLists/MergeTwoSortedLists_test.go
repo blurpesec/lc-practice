@@ -69,8 +69,10 @@ func Test_Problem(t *testing.T) {
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
-		fmt.Printf("【input】:%v		【output】:%v		【expectedOutput】:%v\n", p.one, utils.L2s(
-			mergeTwoSortedLists(utils.S2l(p.one), utils.S2l(p.another))), a.one)
+		test1 := utils.S2l(p.one)
+		test2 := utils.S2l(p.another)
+		test3 := mergeTwoSortedLists(test1, test2)
+		fmt.Printf("【input】:%v		【output】:%v		【expectedOutput】:%v\n", p.one, utils.L2s(test3), a.one)
 	}
 	fmt.Printf("\n\n\n")
 }
