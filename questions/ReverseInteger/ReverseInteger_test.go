@@ -5,48 +5,48 @@ import (
 	"testing"
 )
 
-type question7 struct {
-	para7
-	ans7
+type question struct {
+	para
+	ans
 }
 
-type para7 struct {
+type para struct {
 	one int
 }
 
-type ans7 struct {
+type ans struct {
 	one int
 }
 
-func Test_Problem7(t *testing.T) {
+func Test_Problem(t *testing.T) {
 
-	qs := []question7{
+	qs := []question{
 
-		question7{
-			para7{321},
-			ans7{123},
+		question{
+			para{321},
+			ans{123},
 		},
 
-		question7{
-			para7{-123},
-			ans7{-321},
+		question{
+			para{-123},
+			ans{-321},
 		},
 
-		question7{
-			para7{120},
-			ans7{21},
+		question{
+			para{120},
+			ans{21},
 		},
 
-		question7{
-			para7{1534236469},
-			ans7{0},
+		question{
+			para{1534236469},
+			ans{0},
 		},
 	}
 
-	fmt.Printf("------------------------Leetcode Problem 7------------------------\n")
+	fmt.Printf("------------------------Leetcode Problem 7 ------------------------\n")
 
 	for _, q := range qs {
-		_, p := q.ans7, q.para7
+		_, p := q.ans, q.para
 		fmt.Printf("【input】:%v    【output】:%v\n", p.one, reverseInteger(p.one))
 	}
 	fmt.Printf("\n\n\n")

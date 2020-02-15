@@ -5,53 +5,53 @@ import (
 	"testing"
 )
 
-type question7 struct {
-	para7
-	ans7
+type question struct {
+	para
+	ans
 }
 
-type para7 struct {
+type para struct {
 	one string
 }
 
-type ans7 struct {
+type ans struct {
 	one int
 }
 
-func Test_Problem7(t *testing.T) {
+func Test_Problem(t *testing.T) {
 
-	qs := []question7{
+	qs := []question{
 
-		question7{
-			para7{"III"},
-			ans7{3},
+		question{
+			para{"III"},
+			ans{3},
 		},
 
-		question7{
-			para7{"IV"},
-			ans7{4},
+		question{
+			para{"IV"},
+			ans{4},
 		},
 
-		question7{
-			para7{"IX"},
-			ans7{9},
+		question{
+			para{"IX"},
+			ans{9},
 		},
 
-		question7{
-			para7{"LVIII"},
-			ans7{58},
+		question{
+			para{"LVIII"},
+			ans{58},
 		},
 
-		question7{
-			para7{"MCMXCIV"},
-			ans7{1994},
+		question{
+			para{"MCMXCIV"},
+			ans{1994},
 		},
 	}
 
 	fmt.Printf("------------------------Leetcode Problem 12------------------------\n")
 
 	for _, q := range qs {
-		_, p := q.ans7, q.para7
+		_, p := q.ans, q.para
 		fmt.Printf("【input】:%v    【output】:%v\n", p.one, romanToInt(p.one))
 	}
 	fmt.Printf("\n\n\n")
